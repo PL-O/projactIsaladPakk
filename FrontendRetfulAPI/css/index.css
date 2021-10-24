@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.15752-9/247724028_392418585882318_1470154031775879137_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeE1p_jFqr50_cku31ev5MTRtK0W2zSWvBK0rRbbNJa8EqiU2NHo3q7SmASeHhYvT60_UDvtMf8gGhLSFd8-FGnb&_nc_ohc=wXuGgRyy2VQAX-43Huf&tn=lYO2xdUqm1HIFMo6&_nc_ht=scontent.fbkk12-1.fna&oh=147a28000a4e68d32a9255f1e7f0a612&oe=6196CFC5');
+  object-fit: cover;
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  height: 60px;
+  padding-top: 12px;
+}
+
+.logo{
+  width: 10%;
+  text-align: center;
+}
+
+.logo img{
+  width: 35%;
+  cursor: pointer;
+}
+
+.menu-item{
+  display: flex;
+  width: 90%;
+  text-align: right;
+}
+
+.menu-item p a{
+  text-decoration: none;
+}
+
+.register-item{
+  width: 10%;
+  display: flex;
+  padding: 0  2%;
+  height: 50px;
+  border: 1.5px solid black;
+}
+
+.userText{
+  width: 6%;
+  padding-right: 4%;
+  color: rgb(32, 32, 32);
+}
+
+.restauText{
+  width: 10%;
+  color: rgb(32, 32, 32);
+}
+
+
+.aboutText{
+  width: 60%;
+  color: rgb(32, 32, 32);
+}
+
+.loginText{
+  width: 50%;
+  color: rgb(32, 32, 32);
+}
+
+.loginText a, .aboutText a,.restauText a,.userText a{
+  color: rgb(0, 0, 0);
+  transition: .4s;
+}
+
+.loginText a:hover, .aboutText a:hover,.restauText a:hover,.userText a:hover{
+  color: #616060;
+}
+
+.registerTextA{
+  color: #e34e61;
+  transition: .4s;
+}
+
+.registerTextA:hover{
+  color: #c90825;
+  font-weight: bolder;
+}
+
+
+.showindexFood{
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+}
+
+.showmenuText{
+  width: 50%;
+  margin-top: 9%;
+}
+
+
+
+.showmenuText h1{
+  width: 90%;
+  font-size: 58px;
+  color: #434d43;
+  text-align: right;
+  cursor: default;
+}
+
+#RestaurantH1{
+  margin-top: -40px;
+  color: rgb(94, 112, 98);
+  font-size: 54px;
+}
+
+.showText p{
+  color: #9e9e9e;
+  margin-left: 30%;
+}
+
+.showText{
+  width: 100%;
+  margin-left: 10%;
+  margin-top: -20px;
+  font-size: 16px;
+  cursor: default;
+}
+
+.ShowButton{
+  width: 100%;
+  margin-left: 35%;
+  margin-top: 40px;
+}
+
+.ShowButton button{
+  width: 58%;
+  cursor: pointer;
+  height: 40px;
+  color: #e14c5e;
+  border: 1.5px solid #e14c5e;
+  transition: .4s;
+}
+
+.ShowButton button:hover{
+  color: #eeefe9;
+  background: rgb(221,55,55);
+  background: linear-gradient(90deg, rgba(221,55,55,1) 0%, rgba(231,95,95,1) 58%, rgba(213,92,92,1) 100%);  
+  box-shadow: rgba(214, 79, 79, 0.692) 0px 5px 15px;
+}
+
+.showimage{
+  width: 50%;
+}
+
+.showimage img{
+  width: 100%;
+  
+}
+
+@media  screen and (max-width: 480px) {
+  .logo{
+    width: 20%;
+    text-align: center;
+  }
+  .logo img{
+    width: 50%;
+  }
+  .menu-item{
+    text-align: center;
+  }
+
+  .register-item{
+    width: 20%;
+    font-size: 12px;
+    padding-top: 7px;
+  }
+  
+  .userText{
+    width: 20%;
+  }
+  
+  .restauText{
+    width: 18%;
+    padding-left: 2%;
+  }
+  
+  
+  .aboutText{
+    width: 20%;
+  }
+  
+  .loginText{
+    width: 50%;
+  }
+
+  .showindexFood{
+    width: 100%;
+    display: contents;
+  }
+
+  .showimage{
+    width: 95%;
+    position: absolute;
+    top: 2%;
+  }
+
+  .showmenuText{
+    width: 80%;
+    margin-top:70%;
+  }
+
+  .showmenuText h1{
+    width: 100%;
+    font-size: 42px;
+  }
+  
+  #RestaurantH1{
+    font-size: 36px;
+  }
+
+  .showText p{
+    color: #9e9e9e;
+    margin-left: 30%;
+  }
+  
+  .showText{
+    width: 90%;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: -10px;
+    font-size: 12px;
+    cursor: default;
+  }
+
+  .ShowButton{
+    margin-left:25%;
+  }
+  
+  .ShowButton button{
+    width: 80%;
+  }
+}
+

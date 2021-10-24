@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="../css/addRestaurant.css" rel="stylesheet"/>
+    <title>Add Restaurant</title>
+</head>
+<body onload="init()">   
+
+        <div class="card-add">
+            <h2>addRestaurant</h2>
+            <div class="menu-add">
+                <div class="menu-item">
+                    <label for="imageurl">restaurant URL</label>
+                    <input type="text" id="imageurl" placeholder="Enter restaurant imageurl">
+                </div>
+                <div class="menu-item2">
+                    <label for="name">restaurant Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter restaurant Name">
+                </div>
+                <div class="menu-item3">
+                    <label for="Tel">restaurant Type</label>
+                    <input type="text" class="form-control" id="Type" placeholder="Enter restaurant Type">
+                </div>
+                <div class="adddata">         
+                    <p class="addRestaurant"><a href="#" onclick="addRestaurant()">restaurant</a></p>
+                    <p class="cancel"><a href="../restaurant/restaurant.html">Cencel</a></p>
+                </div>  
+            </div>
+        </div>
+
+        <img class="bg-img" src="https://firebasestorage.googleapis.com/v0/b/prayut-rxltjj.appspot.com/o/restaurant%2F001.png?alt=media&token=8989c6df-2d0e-495f-9758-0da2a3886064" alt="">
+
+
+    <script src="addRestaurant.js"></script>
+</body>
+</html>

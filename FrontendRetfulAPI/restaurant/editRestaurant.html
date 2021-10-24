@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="../css/editRestaurant.css" rel="stylesheet"/>
+    <title>Edit Restaurant</title>
+</head>
+<body onload="init()">                    
+              
+          <div class="card-edit">
+              <h2>editRestaurant</h2>
+              <div class="menu-edit">
+                <div class="menu-item">
+                  <label for="id">restaurant ID</label>
+                  <input type="text" class="form-control" id="id" placeholder="Enter restaurant imageurl">
+                </div>  
+                  <div class="menu-item">
+                      <label for="imageurl">image URL</label>
+                      <input type="text" class="form-control" id="imageurl" placeholder="Enter restaurant imageurl">
+                  </div>
+                  <div class="menu-item">
+                      <label for="name">restaurant Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter restaurant Name">
+                  </div>
+                  <div class="menu-item">
+                      <label for="Tel">restaurant Type</label>
+                      <input type="text" class="form-control" id="Type" placeholder="Enter restaurant Type">
+                </div>
+          
+                  <div class="adddata">         
+                      <p class="editRestaurant"><a href="#" onclick="editRestaurant()">editRestaurant</a></p>
+                      <p class="cancel"><a href="../restaurant/restaurant.html">Cencel</a></p>
+                  </div>  
+              </div>
+          </div>
+
+          <img class="bg-img" src="https://firebasestorage.googleapis.com/v0/b/prayut-rxltjj.appspot.com/o/restaurant%2F001.png?alt=media&token=8989c6df-2d0e-495f-9758-0da2a3886064" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!-- <div class="container">
+            <h1>Edit Restaurant</h1>
+                       
+                <div class="row form">
+                        <div class="col-6 card justify-content-center">
+                          <h5 class="card-header">Edit Restaurant</h5>
+                          <div class="card-body">
+                              <form>
+                                <div class="form-grop">
+                                  <label for="imageurl">image URL</label>
+                                  <input type="text" class="form-control" id="imageurl" placeholder="Enter Restaurant imageurl">
+                                </div>
+                                <div class="form-grop">
+                                  <label for="id">Restaurant ID</label>
+                                  <input type="text" class="form-control" id="id" placeholder="Enter Restaurant ID">
+                                </div>
+                                <div class="form-grop">
+                                  <label for="name">Restaurant Name</label>
+                                  <input type="text" class="form-control" id="name" placeholder="Enter Restaurant Name">
+                                </div>
+                                <div class="form-grop">
+                                  <label for="Type">Restaurant Type</label>
+                                  <input type="text" class="form-control" id="Type" placeholder="Enter Restaurant Type">
+                                </div>
+                               
+                              <a href="#" class="btn btn-success" onclick="editRestaurant()">Update</a>
+                              <a href="restaurant.html" class="btn btn-danger">Cencel</a>
+                            </form>
+                          </div>  
+                        </div>
+                  </div>
+        </div> -->
+
+    <script src="editRestaurant.js"></script>
+</body>
+</html>

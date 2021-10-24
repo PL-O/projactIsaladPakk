@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #ecf4e1;
+  object-fit: cover;
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    height: 60px;
+    padding-top: 12px;
+  }
+  
+  .logo{
+    width: 10%;
+    text-align: center;
+  }
+  
+  .logo img{
+    width: 35%;
+    cursor: pointer;
+  }
+  
+  .menu-item{
+    display: flex;
+    width: 90%;
+    text-align: right;
+  }
+  
+  .menu-item p a{
+    text-decoration: none;
+  }
+  
+  .register-item{
+    width: 10%;
+    display: flex;
+    padding: 0  2%;
+    height: 50px;
+    border: 1.5px solid black;
+  }
+  
+  .userText{
+    width: 6%;
+    padding-right: 4%;
+    color: rgb(32, 32, 32);
+  }
+  
+  .restauText{
+    width: 10%;
+    color: rgb(32, 32, 32);
+  }
+  
+  
+  .aboutText{
+    width: 60%;
+    color: rgb(32, 32, 32);
+  }
+  
+  .loginText{
+    width: 50%;
+    color: rgb(32, 32, 32);
+  }
+  
+  .loginText a, .aboutText a,.restauText a,.userText a{
+    color: rgb(0, 0, 0);
+    transition: .4s;
+  }
+  
+  .loginText a:hover, .aboutText a:hover,.restauText a:hover,.userText a:hover{
+    color: #616060;
+  }
+  
+  .registerTextA{
+    color: #e34e61;
+    transition: .4s;
+  }
+  
+  .registerTextA:hover{
+    color: #c90825;
+    font-weight: bolder;
+  }
+
+
+  .user-area{
+      margin-left: 10%;
+      width: 80%;
+      display: flex;
+      margin-top: 2.5%;
+  }
+
+  .user-text{
+      width: 30%;
+  }
+
+  .user-text h2{
+      font-size: 30px;
+      cursor: default;
+      color: #434d44;
+  }
+
+  .user-search{
+      width: 40%;
+      text-align: center;
+      display: flex;
+  }
+
+  .user-search h4{
+    width: 10%;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: .4s;
+  }
+
+  .user-search h4:hover{
+    color: #e34e61;
+    transform:scale(1.2,1.2);
+  }
+
+
+  .user-search input{
+      width: 90%;
+      height: 40px;
+      margin-top: 6%;
+      border: 2px solid rgb(81, 87, 81);
+      border-radius: 7px;
+      padding-left: 15px;
+      font-size: 20px;
+      color: #5f7163;
+      background: transparent;
+      transition: .4s;
+      outline: none;
+  }
+
+  .user-search input:hover{
+    border: 2px solid rgb(111, 139, 111);
+  }
+
+  .user-add{
+      width: 30%;
+      text-align: right;
+  }
+
+  .user-add a{
+    border: 2px solid #e34e61;
+    width: 25%;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 8px 10px;
+    color: #e34e61;
+    transition: .4s;
+  }
+
+  .user-add a:hover{
+    color: white;
+    background: rgb(221,55,55);
+  background: linear-gradient(90deg, rgba(221,55,55,1) 0%, rgba(231,95,95,1) 58%, rgba(213,92,92,1) 100%);  
+  box-shadow: rgba(214, 79, 79, 0.692) 0px 5px 15px;
+  }
+
+  .user-add a i{
+      margin-top: 8%;
+  }
+
+
+
+  .user-item{
+      margin-left: 10%;
+      width: 80%;
+  }
+
+  .row{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      width: 100%;
+      row-gap: 40px;
+      margin-top: 6%;
+      margin-bottom: 6%;
+  }
+
+  .card{
+      width: 80%;
+      text-align: center;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      background-color: #f2f4ef;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      transition: .4s;
+      cursor: pointer;
+  }
+
+  .card:hover{
+
+  transform:scale(1.2,1.2);
+  }
+
+  .card img{
+      width: 60%;
+      height: 150px;
+      object-fit: cover;
+      margin-top: 40PX;
+      border-radius: 50%;
+      border: 2.5px solid #5e8d62;
+  }
+
+  .card-icon{
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    margin-top: 25px;
+  }
+
+  .editUser,.deleteUser{
+    width: 50%;
+    text-align: center;
+  }
+
+  .card-icon a{
+    color: #e34e61;
+    transition: .4s;
+  }
+
+  .card-icon a:hover {
+    color: #c90825;
+  }
+
+  .card h2{
+    color: #434d44;
+    cursor: default;
+    margin-top: 28px;
+  }
+
+  .card h5{
+    color: #5f7163;
+    cursor: default;
+    margin-top: -10px;
+
+  }
+
+  @media  screen and (max-width: 480px){
+    .logo{
+      width: 20%;
+      text-align: center;
+    }
+    .logo img{
+      width: 50%;
+    }
+    .menu-item{
+      text-align: center;
+    }
+  
+    .register-item{
+      width: 20%;
+      font-size: 12px;
+      padding-top: 7px;
+    }
+    
+    .userText{
+      width: 20%;
+    }
+
+    .restauText{
+      width: 18%;
+      padding-left: 2%;
+    }
+    
+    
+    .aboutText{
+      width: 20%;
+    }
+    
+    .loginText{
+      width: 50%;
+    }
+
+    .user-text h2{
+      font-size: 20px;
+    }
+
+    .user-search input{
+    height: 35px;
+    font-size: 18px;
+    }
+
+    .user-add a{
+    font-size: 15px;
+    }
+
+    .user-add a i{
+      margin-top: 15%;
+      }
+    .row{
+      display: contents;
+    }
+
+    .card{
+      width: 65%;
+      margin-left: 17%;
+      margin-top: 10%;
+    }
+
+    .user-item{
+        margin-bottom: 8%;
+    }
+
+    .card img{
+      width: 45%;
+      height: 110px;
+    }
+    
+    .card h2{
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    .user-search h4{
+
+      padding-top: 0px;
+      margin-left: 5px;
+      
+    }
+
+
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/restaurant.css">
+    <title>Document</title>
+</head>
+<body onload="init()">
+
+     <!-- navbar -->
+     <div class="navbar">
+        <div class="logo">
+          <a href="/FrontendRetfulAPI/user/index.html">
+            <img src="https://scontent.fbkk12-2.fna.fbcdn.net/v/t1.15752-9/247320189_308026004112720_3899833675957693306_n.png?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeHOk8mNYsTs3J-8sEsjYMhqcaadD-XDbddxpp0P5cNt14AfFxL_fgTztYcjjEKzRRiHPZpx13oqDKlMqEYi0xqP&_nc_ohc=y_pbKYUIwHQAX9n91me&_nc_oc=AQmhvQTSEkq-WMebP2HjOK7hMimbWQeOeFKfcWrDZ8DrZK-6RcUxfpzv_cc7y_lGBUs0_TEjnhVJVTnto6VrODjt&_nc_ht=scontent.fbkk12-2.fna&oh=de982a62cc540137604cb869e552ac5c&oe=619A0842" alt="">
+          </a>
+        </div>
+        <div class="menu-item">
+            <p class="aboutText"><a href="">About us</a></p>
+            <p class="restauText"><a href="restaurant.html">Restaurant</a></p>
+            <p class="userText"><a href="../user/user.html" >User</a></p>
+    
+            <div class="register-item">
+                <p ><a href="" class="registerTextA">Register</a></p>
+                <p class="loginText"><a href="">Login</a></p>
+            </div>
+        </div>
+    </div>
+  <!-- End navbar -->
+
+    <div class="restaurant-area">
+        <div class="restaurant-text">
+            <h2>Online Restaurant</h2>
+        </div>
+
+        <div class="restaurant-search">
+            <input type="text" class="search" placeholder="Search restaurant">
+            <h4 onclick="reloadPage()"><i class="fas fa-sync-alt"></i></h4>
+        </div>
+
+        <div class="restaurant-add">
+            <a href="addRestaurant.html"><i class="fas fa-plus"></i></a>
+        </div>
+    </div>
+
+
+    <div class="restaurant-item">
+        <div class="row">
+            
+        </div>
+    </div>
+
+
+    <script src="restaurant.js"></script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f8ffec;
+  object-fit: cover;
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    height: 60px;
+    padding-top: 12px;
+  }
+  
+  .logo{
+    width: 10%;
+    text-align: center;
+  }
+  
+  .logo img{
+    width: 35%;
+    cursor: pointer;
+  }
+  
+  .menu-item{
+    display: flex;
+    width: 90%;
+    text-align: right;
+  }
+  
+  .menu-item p a{
+    text-decoration: none;
+  }
+  
+  .register-item{
+    width: 10%;
+    display: flex;
+    padding: 0  2%;
+    height: 50px;
+    border: 1.5px solid black;
+  }
+  
+  .userText{
+    width: 6%;
+    padding-right: 4%;
+    color: rgb(32, 32, 32);
+  }
+  
+  .restauText{
+    width: 10%;
+    color: rgb(32, 32, 32);
+  }
+  
+  
+  .aboutText{
+    width: 60%;
+    color: rgb(32, 32, 32);
+  }
+  
+  .loginText{
+    width: 50%;
+    color: rgb(32, 32, 32);
+  }
+  
+  .loginText a, .aboutText a,.restauText a,.userText a{
+    color: rgb(0, 0, 0);
+    transition: .4s;
+  }
+  
+  .loginText a:hover, .aboutText a:hover,.restauText a:hover,.userText a:hover{
+    color: #616060;
+  }
+  
+  .registerTextA{
+    color: #e34e61;
+    transition: .4s;
+  }
+  
+  .registerTextA:hover{
+    color: #c90825;
+    font-weight: bolder;
+  }
+
+
+  .restaurant-area{
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    margin-top: 2.5%;
+}
+
+.restaurant-text{
+    width: 30%;
+}
+
+.restaurant-text h2{
+    font-size: 35px;
+    color: #434d44;
+  cursor: default;
+}
+
+.restaurant-search{
+    width: 40%;
+    text-align: center;
+    display: flex;
+}
+
+.restaurant-search h4{
+  width: 10%;
+  padding-top: 20px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.restaurant-search h4:hover{
+  color: #e34e61;
+  transform:scale(1.2,1.2);
+}
+
+.restaurant-search input{
+  width: 90%;
+  height: 40px;
+  margin-top: 6%;
+  border: 2px solid rgb(81, 87, 81);
+  border-radius: 7px;
+  padding-left: 15px;
+  font-size: 20px;
+  color: #5f7163;
+  background: transparent;
+  transition: .4s;
+  outline: none;
+}
+
+.restaurant-add{
+    width: 30%;
+    text-align: right;
+}
+
+.restaurant-add a{
+  border: 2px solid #e34e61;
+  width: 25%;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 8px 14px;
+  color: #e34e61;
+  transition: .4s;
+}
+
+.restaurant-add a:hover{
+  color: white;
+  background: rgb(221,55,55);
+background: linear-gradient(90deg, rgba(221,55,55,1) 0%, rgba(231,95,95,1) 58%, rgba(213,92,92,1) 100%);  
+box-shadow: rgba(214, 79, 79, 0.692) 0px 5px 15px;
+}
+
+.restaurant-add a i{
+  margin-top: 9%;
+}
+
+
+
+
+.restaurant-item{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    row-gap: 40px;
+    margin-top: 25px;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+.card{
+    width: 60%;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    cursor: pointer;
+}
+
+.card img{
+    width: 60%;
+    height: 150px;
+    margin-top: 40PX;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.card:hover img{
+  transform:scale(1.2,1.2);
+}
+
+.stargroup{
+  display: flex;
+  color: #f8e647;
+  font-size: 12px;
+  width: 100%;
+  padding-left: 36%;
+  margin-top: 10px;
+}
+
+.card h5{
+  color: rgb(159, 184, 159);
+  cursor: default;
+}
+
+.card h2{
+  color: #434d44;
+  cursor: default;
+  margin-top: -18px;
+}
+
+.card-icon{
+  width: 100%;
+}
+
+.editResBox{
+  width: 100%;
+  padding: 5px 0px;
+  cursor: pointer;
+  border: 1.5px solid #e34e61;
+  border-radius: 7px;
+  transition: .4s;
+}
+
+.editResBox:hover{
+  background: rgb(221,55,55);
+  background: linear-gradient(90deg, rgba(221,55,55,1) 0%, rgba(231,95,95,1) 58%, rgba(213,92,92,1) 100%);  
+  box-shadow: rgba(214, 79, 79, 0.692) 0px 5px 15px;
+}
+
+.editResBox:hover a{
+  color: #fff;
+}
+
+
+.editResBox a{
+  color: #e34e61;
+  text-decoration: none;
+}
+
+.deleteResBox{
+  width: 100%;
+  padding: 5px 0px;
+  cursor: pointer;
+  border: 1.5px solid #e34e61;
+  border-radius: 7px;
+  margin-top: 15px;
+  background: #e34e61;
+  transition: .4s;
+}
+
+.deleteResBox:hover{
+  background: rgb(221,55,55);
+  background: linear-gradient(90deg, rgba(221,55,55,1) 0%, rgba(231,95,95,1) 58%, rgba(213,92,92,1) 100%);  
+  box-shadow: rgba(214, 79, 79, 0.692) 0px 5px 15px;
+}
+
+.deleteResBox a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+@media  screen and (max-width: 480px){
+  .logo{
+    width: 20%;
+    text-align: center;
+  }
+  .logo img{
+    width: 50%;
+  }
+  .menu-item{
+    text-align: center;
+  }
+
+  .register-item{
+    width: 20%;
+    font-size: 12px;
+    padding-top: 7px;
+  }
+  
+  .userText{
+    width: 20%;
+  }
+
+  .restauText{
+    width: 18%;
+    padding-left: 2%;
+  }
+  
+  
+  .aboutText{
+    width: 20%;
+  }
+  
+  .loginText{
+    width: 50%;
+  }
+
+  .restaurant-area{
+    margin-top: 3%;
+  }
+
+  .restaurant-text h2{
+    font-size: 15px;
+  }
+
+  .restaurant-search input{
+    height: 35px;
+    font-size: 18px;
+    }
+  
+  .restaurant-search h4{
+    padding-top: 0px;
+    margin-left: 5px;
+  }
+
+  .restaurant-add a{
+    font-size: 15px;
+  }
+
+  .restaurant-add a i{
+    margin-top: 20%;
+  }
+
+  .row{
+    display: contents;
+  }
+
+  .card{
+    width: 65%;
+    margin-left: 17%;
+    margin-top: 10%;
+  }
+
+  .restaurant-item{
+    margin-bottom: 8%;
+  }
+
+  .card img{
+    width: 70%;
+    height: 150px;
+  }
+
+  .card h2{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+}
